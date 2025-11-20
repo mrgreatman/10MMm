@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing God | The Ultimate Bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#FFF9E5',
+                200: '#FFECB3',
+                300: '#FFD700', // Bright Neon Gold
+                400: '#E6C200',
+                500: '#B8860B', // Base Gold
+                600: '#996515',
+                800: '#664200',
+                900: '#3D2B05',
+              },
+              neon: {
+                blue: '#00F0FF',
+                purple: '#BC13FE',
+                red: '#FF003C',
+              },
+              surface: {
+                black: '#000000',
+                card: '#09090b', 
+                border: '#27272a',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cinzel"', 'serif'],
+              sans: ['"Rajdhani"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'grid-pattern': 'linear-gradient(to right, #1a1a1a 1px, transparent 1px), linear-gradient(to bottom, #1a1a1a 1px, transparent 1px)',
+              'metal-gradient': 'linear-gradient(145deg, #1a1a1a, #000)',
+              'gold-gradient': 'linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #B8860B 100%)',
+            },
+            boxShadow: {
+              'neon-gold': '0 0 15px rgba(255, 215, 0, 0.3), inset 0 0 10px rgba(255, 215, 0, 0.1)',
+              'neon-blue': '0 0 15px rgba(0, 240, 255, 0.3), inset 0 0 10px rgba(0, 240, 255, 0.1)',
+              'neon-red': '0 0 15px rgba(255, 0, 60, 0.3), inset 0 0 10px rgba(255, 0, 60, 0.1)',
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'scan': 'scan 3s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              scan: {
+                '0%': { transform: 'translateY(-100%)' },
+                '100%': { transform: 'translateY(100%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      
+      /* Visible Borders & Glass */
+      .glass-card {
+        background: rgba(9, 9, 11, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+      }
+      
+      .glass-card-gold {
+        background: rgba(9, 9, 11, 0.95);
+        border: 1px solid rgba(184, 134, 11, 0.3);
+        box-shadow: 0 0 20px rgba(184, 134, 11, 0.05);
+      }
+
+      .text-glow {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      }
+
+      /* Typography Enhancements */
+      h1, h2, h3, h4 {
+        letter-spacing: 0.05em;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #B8860B;
+        border-radius: 3px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
